@@ -76,7 +76,7 @@ p {
 .waseela-logo:hover {
   transform: translateY(-2px);
 }
-.waseela-logo-letter {
+.logo-letter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,7 +90,7 @@ p {
     transform 0.2s,
     background-color 0.2s;
 }
-.waseela-logo:hover .waseela-logo-letter {
+.waseela-logo:hover .logo-letter {
   transform: rotate(-8deg) scale(1.08);
   background: var(--dark-green);
 }
@@ -312,7 +312,7 @@ thead {
   background: var(--dark-green);
   color: var(--white);
 }
-.profile-nav-link-banner {
+.join-banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -324,11 +324,11 @@ thead {
   background: var(--dark-green);
   color: var(--white);
 }
-.profile-nav-link-banner h2 {
+.join-banner h2 {
   margin-top: 0;
   font-size: 30px;
 }
-.profile-nav-link-banner p {
+.join-banner p {
   margin: 0;
   color: var(--pale-green);
 }
@@ -402,7 +402,7 @@ thead {
   margin: 0 0 8px;
   font-size: 14px;
 }
-.worker-content-card-photo {
+.worker-photo {
   width: 64px;
   height: 64px;
   flex-shrink: 0;
@@ -436,7 +436,7 @@ thead {
   width: 100%;
   margin-top: 20px;
 }
-.worker-content-card-highlight {
+.worker-highlight {
   min-width: 0;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -532,7 +532,7 @@ summary:hover {
   .content-card {
     padding: 22px;
   }
-  .profile-nav-link-banner {
+  .join-banner {
     padding: 26px;
   }
   .site-footer {

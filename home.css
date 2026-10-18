@@ -76,7 +76,7 @@ p {
 .waseela-logo:hover {
   transform: translateY(-2px);
 }
-.waseela-logo-letter {
+.logo-letter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,7 +90,7 @@ p {
     transform 0.2s,
     background-color 0.2s;
 }
-.waseela-logo:hover .waseela-logo-letter {
+.waseela-logo:hover .logo-letter {
   transform: rotate(-8deg) scale(1.08);
   background: var(--dark-green);
 }
@@ -267,7 +267,7 @@ p {
   font-weight: bold;
   text-decoration: underline;
 }
-.section-paragraph-link:hover {
+.text-link:hover {
   color: var(--dark-green);
 }
 /* Reusable section grids. */
@@ -335,7 +335,7 @@ thead {
   background: var(--dark-green);
   color: var(--white);
 }
-.profile-nav-link-banner {
+.join-banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -347,11 +347,11 @@ thead {
   background: var(--dark-green);
   color: var(--white);
 }
-.profile-nav-link-banner h2 {
+.join-banner h2 {
   margin-top: 0;
   font-size: 30px;
 }
-.profile-nav-link-banner p {
+.join-banner p {
   margin: 0;
   color: var(--pale-green);
 }
@@ -480,7 +480,7 @@ thead {
   .action-buttons .action-button {
     width: 100%;
   }
-  .profile-nav-link-banner {
+  .join-banner {
     padding: 26px;
   }
   .site-footer {
