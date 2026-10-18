@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASEELA | Find Worker</title>
+    <link rel="stylesheet" href="find-worker.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="home.html" aria-label="Waseela home">
+            <span class="mark" aria-hidden="true">W</span>
+            <span>WASEELA</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="home.html">Home</a>
+            <a class="active" aria-current="page" href="Find-worker.html">Find Worker</a>
+            <a class="join" href="Create-Profile.html">Create Profile</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Search and featured worker -->
+        <section class="hero">
+            <div>
+                <p class="label">FIND A WORKER</p>
+                <h1>Skilled help.<br><span>Closer to home.</span></h1>
+                <p class="intro">Browse plumbers, electricians and AC technicians in Karachi. Read their skills and
+                    experience before choosing a worker.</p>
+
+
+
+                <!-- Form of profile  -->
+                <form class="card search" action="Find-worker.html#workers" method="get">
+                    <div class="two">
+                        <div class="field">
+                            <label for="service">Service</label>
+                            <select id="service" name="service">
+                                <option value="all">All services</option>
+                                <option value="ac">AC repair</option>
+                                <option value="electrical">Electrical</option>
+                                <option value="plumbing">Plumbing</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="area">Area</label>
+                            <select id="area" name="area">
+                                <option value="gulshan">Gulshan, Karachi</option>
+                                <option value="nazimabad">Nazimabad, Karachi</option>
+                                <option value="north-karachi">North Karachi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="button" type="submit">Browse Worker Profiles</button>
+                </form>
+            </div>
+
+
+            <!-- sample card with image  -->
+
+
+            <article class="feature">
+                <img class="photo" src="ac technician1.jpg" alt="Muhammad Imran, AC technician">
+                <div class="feature-text">
+                    <p class="label">WORKER PROFILE</p>
+                    <h2>Muhammad Imran</h2>
+                    <p>AC technician in Gulshan, Karachi</p>
+                    <div class="tags"><span>12 years of experience</span><span>Urdu and Punjabi</span></div>
+                    <a class="link" href="#imran">View skills and experience</a>
+                </div>
+            </article>
+        </section>
+
+
+        <!-- more workers section  -->
+
+
+        <!-- Worker 1  -->
+
+        <section class="section" id="workers">
+            <p class="label">WORKER DIRECTORY</p>
+            <h2>Explore local profiles</h2>
+            <p class="text">Check each worker's skills, experience and service area.</p>
+            <div class="three">
+                <article class="card worker" id="imran">
+                    <div class="person">
+                        <img class="avatar" src="ac technician1.jpg" alt="Muhammad Imran, ac technician" width="64"
+                            height="64">
+                        <div>
+                            <h3>Muhammad Imran</h3>
+                            <p>AC technician</p>
+                        </div>
+                    </div>
+                    <p>Gulgasht, Multan</p>
+                    <div class="facts">
+                        <p><span>Experience</span><strong>12 years</strong></p>
+                        <p><span>Languages</span><strong>Urdu, Saraiki</strong></p>
+                    </div>
+                    <span class="tag">Verified </span>
+                    <details>
+                        <summary>Skills and services</summary>
+                        <ul class="list">
+                            <li>AC cleaning and servicing</li>
+                            <li>Cooling checks</li>
+                            <li>Water-leak repairs</li>
+                        </ul>
+                    </details>
+                    <p class="contact">+923123456789/p>
+                </article>
+
+
+
+                <!-- Worker 2  -->
+
+
+                <article class="card worker" id="ali">
+                    <div class="person">
+                        <img class="avatar" src="electrician.jpg" alt="Ali Raza, electrician" width="64" height="64">
+                        <div>
+                            <h3>Ali Raza</h3>
+                            <p>Electrician</p>
+                        </div>
+                    </div>
+                    <p>Johar Town, Lahore</p>
+                    <div class="facts">
+                        <p><span>Experience</span><strong>8 years</strong></p>
+                        <p><span>Languages</span><strong>Urdu, Sindhi</strong></p>
+                    </div>
+                    <span class="tag">Verified</span>
+                    <details>
+                        <summary>Skills and services</summary>
+                        <ul class="list">
+                            <li>Switch and socket replacement</li>
+                            <li>Fan and light installation</li>
+                            <li>Household wiring checks</li>
+                        </ul>
+                    </details>
+                    <p class="contact">+923123456789</p>
+                </article>
+
+                <!-- Worker 3  -->
+
+                <article class="card worker" id="saad">
+                    <div class="person">
+                        <img class="avatar" src="plumber.jpeg" alt="Saad Bashir, plumber" width="64" height="64">
+                        <div>
+                            <h3>Saad Bashir</h3>
+                            <p>Plumber</p>
+                        </div>
+                    </div>
+                    <p>I9, Islamabad</p>
+                    <div class="facts">
+                        <p><span>Experience</span><strong>6 years</strong></p>
+                        <p><span>Languages</span><strong>Urdu, Punjabi</strong></p>
+                    </div>
+                    <span class="tag">Verified</span>
+                    <details>
+                        <summary>Skills and services</summary>
+                        <ul class="list">
+                            <li>Tap and pipe repairs</li>
+                            <li>Water-leak checks</li>
+                            <li>Bathroom fittings</li>
+                        </ul>
+                    </details>
+                    <p class="contact">+923123456789</p>
+                </article>
+            </div>
+
+
+
+
+
+            <aside class="note">
+                <strong>Understand the profile status</strong>
+                <p>“Profile verified means the worker's is a verified user with a good experience.</p>
+            </aside>
+        </section>
+
+        <!-- before u hire section  -->
+
+        <section class="section">
+            <p class="label">BEFORE YOU HIRE</p>
+            <h2>Choose with clear information</h2>
+            <div class="three">
+                <article class="card"><span class="number">01</span>
+                    <h3>Check the skills</h3>
+                    <p>Look for experience with the repair or installation you need.</p>
+                </article>
+                <article class="card"><span class="number">02</span>
+                    <h3>Confirm the area</h3>
+                    <p>Check whether the worker serves your neighbourhood.</p>
+                </article>
+                <article class="card"><span class="number">03</span>
+                    <h3>Discuss the job</h3>
+                    <p>Agree on the work, timing and cost before a visit.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- Worker area table  -->
+
+
+        <section class="section">
+            <p class="label">SERVICE AREAS</p>
+            <h2>Check where each worker operates</h2>
+            <div class="table-box">
+                <table>
+                    <caption>Service areas for the profiles listed above</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Worker</th>
+                            <th scope="col">Service</th>
+                            <th scope="col">Area</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Muhammad Imran</th>
+                            <td>AC repair</td>
+                            <td>Gulgasht, Multan </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ali Raza</th>
+                            <td>Electrical</td>
+                            <td>Johar Town, Lahore</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Saad Bashir</th>
+                            <td>Plumbing</td>
+                            <td>I9, Islamabad</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <!-- Last banner  -->
+
+        <section class="banner">
+            <div>
+                <h2>Do you provide a skilled service?</h2>
+                <p>Give households a clear introduction to your work.</p>
+            </div>
+            <a class="button" href="Create-Profile.html">Create My Profile</a>
+        </section>
+    </main>
+
+
+
+    <!-- Footer  -->
+
+    <footer class="footer">
+        <div>
+            <strong>WASEELA</strong>
+            <p>Professional profiles for skilled workers.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+            <a href="home.html">Home</a>
+            <a href="Find-worker.html">Find Worker</a>
+            <a href="Create-Profile.html">Create Profile</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

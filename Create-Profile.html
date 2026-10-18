@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASEELA | Create Profile</title>
+    <link rel="stylesheet" href="create-profile.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="home.html" aria-label="Waseela home">
+            <span class="mark" aria-hidden="true">W</span>
+            <span>WASEELA</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="home.html">Home</a>
+            <a href="Find-worker.html">Find Worker</a>
+            <a class="active" aria-current="page" href="Create-Profile.html">Create Profile</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Intro section  -->
+        <section class="hero">
+            <div>
+                <p class="label">CREATE YOUR PROFILE</p>
+                <h1>Start Your<br><span>WASEELA here </span></h1>
+            </div>
+            <p class="intro">Describe your services, experience and the areas you cover. Check that your contact details
+                and work information are accurate.</p>
+        </section>
+
+        <div class="layout">
+            <section class="card" id="details">
+                <h2>Your details</h2>
+                <p class="text">Complete each field to create your professional WASEELA profile.</p>
+
+
+                <!-- Form for filling details  -->
+
+                <form action="#details" method="get">
+                    <fieldset>
+                        <legend>Personal information</legend>
+                        <div class="two">
+                            <div class="field">
+                                <label for="name">Full name</label>
+                                <input id="name" type="text" placeholder="Your full name" required>
+                            </div>
+                            <div class="field">
+                                <label for="phone">Phone number</label>
+                                <input id="phone" type="tel" placeholder="03XX XXXXXXX" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Work details</legend>
+                        <div class="two">
+                            <div class="field">
+                                <label for="service">Main service</label>
+                                <select id="service" required>
+                                    <option value="">Choose a service</option>
+                                    <option value="ac">AC repair</option>
+                                    <option value="electrical">Electrical</option>
+                                    <option value="plumbing">Plumbing</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="experience">Experience in years</label>
+                                <input id="experience" type="number" min="0" max="60" placeholder="Years of experience"
+                                    required>
+                            </div>
+                            <div class="field">
+                                <label for="area">Service area</label>
+                                <select id="area" required>
+                                    <option value="">Choose an area</option>
+                                    <option value="gulshan">Gulgasht, Multan</option>
+                                    <option value="nazimabad">Johar Town, Lahore</option>
+                                    <option value="north">I9, Islamabad</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="languages">Languages</label>
+                                <input id="languages" type="text" placeholder="Urdu, Punjabi" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="field">
+                        <label for="about">About your work</label>
+                        <textarea id="about" rows="5"
+                            placeholder="Describe your services and the types of jobs you handle." required></textarea>
+                    </div>
+                    <label class="check" for="consent">
+                        <input type="checkbox" id="consent" required>
+                        <span>I confirm that the information I entered is accurate.</span>
+                    </label>
+                    <div class="buttons">
+                        <button class="button" type="submit">Create My Profile</button>
+                        <button class="button" type="submit">Create My QR Card</button>
+                        <button class="button light" type="reset">Clear Form</button>
+                    </div>
+                </form>
+            </section>
+
+
+
+
+            <!-- Sample Profle cards  -->
+
+
+            <aside>
+                <article class="card">
+                    <p class="label">WORKER PROFILE</p>
+                    <div class="person">
+                        <img class="avatar" src="ac technician1.jpg" alt="Muhammad Imran, AC technician" width="76"
+                            height="76">
+                        <div>
+                            <h2>Muhammad Imran</h2>
+                            <p>AC technician</p><span class="tag">Profile created</span>
+                        </div>
+                    </div>
+                    <div class="facts">
+                        <p><span>Service area</span><strong>Gulshan, Karachi</strong></p>
+                        <p><span>Experience</span><strong>12 years</strong></p>
+                        <p><span>Languages</span><strong>Urdu, Punjabi</strong></p>
+                    </div>
+                    <h3>About this worker</h3>
+                    <p>AC repair and maintenance in Gulshan, with 12 years of experience in servicing and water-leak
+                        repairs.</p>
+                </article>
+
+
+                <!-- Voice card  -->
+                <section class="voice">
+                    <h2>Introduce your work</h2>
+                    <p class="urdu" lang="ur" dir="rtl">اپنے ہنر کے بارے میں بتائیں</p>
+                    <img class="wave" src="wave.png" alt="Waveform representing a spoken introduction">
+                    <p>Describe your services and experience in Urdu or English.</p>
+                </section>
+
+                <!-- Include card  -->
+                <section class="note">
+                    <h3>What to include</h3>
+                    <ol>
+                        <li>The services you provide</li>
+                        <li>Your practical work experience</li>
+                        <li>The areas you can travel to</li>
+                    </ol>
+                </section>
+            </aside>
+        </div>
+
+
+        <!-- Bottom cards  -->
+
+
+        <section class="section">
+            <p class="label">A CLEAR WORKER PROFILE</p>
+            <h2>Information that helps households decide</h2>
+            <div class="three">
+                <article class="card">
+                    <h3>Relevant skills</h3>
+                    <p>Explain the repairs and installations you can handle.</p>
+                </article>
+                <article class="card">
+                    <h3>Practical experience</h3>
+                    <p>Describe your experience with the work you offer.</p>
+                </article>
+                <article class="card">
+                    <h3>Clear service area</h3>
+                    <p>List the neighbourhoods you can reach for a job.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- Guidance Cards  -->
+
+        <section class="section">
+            <p class="label">PROFILE GUIDANCE</p>
+            <h2>Before completing your details</h2>
+            <div class="two">
+                <article class="card">
+                    <h3>What should I write about my work?</h3>
+                    <p>Include your trade, the jobs you handle and how long you have worked in the field.</p>
+                </article>
+                <article class="card">
+                    <h3>Which contact number should I use?</h3>
+                    <p>Use a number where customers can reach you about work.</p>
+                </article>
+                <article class="card">
+                    <h3>Which languages should I list?</h3>
+                    <p>Include the languages you can comfortably use when discussing a job.</p>
+                </article>
+                <article class="card">
+                    <h3>Does a profile confirm identity?</h3>
+                    <p>No. A listed profile and an identity check are separate things.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer  -->
+
+
+    <footer class="footer">
+        <div>
+            <strong>WASEELA</strong>
+            <p>Professional profiles for skilled workers.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+            <a href="home.html">Home</a>
+            <a href="Find-worker.html">Find Worker</a>
+            <a href="Create-Profile.html">Create Profile</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
