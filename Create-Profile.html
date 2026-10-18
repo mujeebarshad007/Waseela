@@ -9,33 +9,33 @@
 </head>
 
 <body>
-    <header class="header">
-        <a class="logo" href="home.html" aria-label="Waseela home">
-            <span class="mark" aria-hidden="true">W</span>
+    <header class="waseela-header">
+        <a class="waseela-logo" href="home.html" aria-label="Waseela home">
+            <span class="logo-letter" aria-hidden="true">W</span>
             <span>WASEELA</span>
         </a>
-        <nav class="nav" aria-label="Main navigation">
+        <nav class="navigation-links" aria-label="Main navigation">
             <a href="home.html">Home</a>
             <a href="Find-worker.html">Find Worker</a>
-            <a class="active" aria-current="page" href="Create-Profile.html">Create Profile</a>
+            <a class="current-page" aria-current="page" href="Create-Profile.html">Create Profile</a>
         </nav>
     </header>
 
-    <main class="container">
+    <main class="page-area">
         <!-- Intro section  -->
-        <section class="hero">
+        <section class="welcome-area">
             <div>
-                <p class="label">CREATE YOUR PROFILE</p>
+                <p class="small-heading">CREATE YOUR PROFILE</p>
                 <h1>Start Your<br><span>WASEELA here </span></h1>
             </div>
-            <p class="intro">Describe your services, experience and the areas you cover. Check that your contact details
+            <p class="intro-paragraph">Describe your services, experience and the areas you cover. Check that your contact details
                 and work information are accurate.</p>
         </section>
 
-        <div class="layout">
-            <section class="card" id="details">
+        <div class="profile-layout">
+            <section class="content-card" id="details">
                 <h2>Your details</h2>
-                <p class="text">Complete each field to create your professional WASEELA profile.</p>
+                <p class="section-paragraph">Complete each field to create your professional WASEELA profile.</p>
 
 
                 <!-- Form for filling details  -->
@@ -43,12 +43,12 @@
                 <form action="#details" method="get">
                     <fieldset>
                         <legend>Personal information</legend>
-                        <div class="two">
-                            <div class="field">
+                        <div class="two-column-layout">
+                            <div class="input-group">
                                 <label for="name">Full name</label>
                                 <input id="name" type="text" placeholder="Your full name" required>
                             </div>
-                            <div class="field">
+                            <div class="input-group">
                                 <label for="phone">Phone number</label>
                                 <input id="phone" type="tel" placeholder="03XX XXXXXXX" required>
                             </div>
@@ -56,8 +56,8 @@
                     </fieldset>
                     <fieldset>
                         <legend>Work details</legend>
-                        <div class="two">
-                            <div class="field">
+                        <div class="two-column-layout">
+                            <div class="input-group">
                                 <label for="service">Main service</label>
                                 <select id="service" required>
                                     <option value="">Choose a service</option>
@@ -66,12 +66,12 @@
                                     <option value="plumbing">Plumbing</option>
                                 </select>
                             </div>
-                            <div class="field">
+                            <div class="input-group">
                                 <label for="experience">Experience in years</label>
                                 <input id="experience" type="number" min="0" max="60" placeholder="Years of experience"
                                     required>
                             </div>
-                            <div class="field">
+                            <div class="input-group">
                                 <label for="area">Service area</label>
                                 <select id="area" required>
                                     <option value="">Choose an area</option>
@@ -80,25 +80,25 @@
                                     <option value="north">I9, Islamabad</option>
                                 </select>
                             </div>
-                            <div class="field">
+                            <div class="input-group">
                                 <label for="languages">Languages</label>
                                 <input id="languages" type="text" placeholder="Urdu, Punjabi" required>
                             </div>
                         </div>
                     </fieldset>
-                    <div class="field">
+                    <div class="input-group">
                         <label for="about">About your work</label>
                         <textarea id="about" rows="5"
                             placeholder="Describe your services and the types of jobs you handle." required></textarea>
                     </div>
-                    <label class="check" for="consent">
+                    <label class="agreement-check" for="consent">
                         <input type="checkbox" id="consent" required>
                         <span>I confirm that the information I entered is accurate.</span>
                     </label>
-                    <div class="buttons">
-                        <button class="button" type="submit">Create My Profile</button>
-                        <button class="button" type="submit">Create My QR Card</button>
-                        <button class="button light" type="reset">Clear Form</button>
+                    <div class="action-buttons">
+                        <button class="action-button" type="submit">Create My Profile</button>
+                        <button class="action-button" type="submit">Create My QR Card</button>
+                        <button class="action-button white-button" type="reset">Clear Form</button>
                     </div>
                 </form>
             </section>
@@ -110,17 +110,17 @@
 
 
             <aside>
-                <article class="card">
-                    <p class="label">WORKER PROFILE</p>
-                    <div class="person">
-                        <img class="avatar" src="ac technician1.jpg" alt="Muhammad Imran, AC technician" width="76"
+                <article class="content-card">
+                    <p class="small-heading">WORKER PROFILE</p>
+                    <div class="worker-summary">
+                        <img class="worker-photo" src="ac technician1.jpg" alt="Muhammad Imran, AC technician" width="76"
                             height="76">
                         <div>
                             <h2>Muhammad Imran</h2>
-                            <p>AC technician</p><span class="tag">Profile created</span>
+                            <p>AC technician</p><span class="skill-label">Profile created</span>
                         </div>
                     </div>
-                    <div class="facts">
+                    <div class="worker-facts">
                         <p><span>Service area</span><strong>Gulshan, Karachi</strong></p>
                         <p><span>Experience</span><strong>12 years</strong></p>
                         <p><span>Languages</span><strong>Urdu, Punjabi</strong></p>
@@ -132,15 +132,15 @@
 
 
                 <!-- Voice card  -->
-                <section class="voice">
+                <section class="voice-introduction">
                     <h2>Introduce your work</h2>
-                    <p class="urdu" lang="ur" dir="rtl">اپنے ہنر کے بارے میں بتائیں</p>
-                    <img class="wave" src="wave.png" alt="Waveform representing a spoken introduction">
+                    <p class="urdu-message" lang="ur" dir="rtl">اپنے ہنر کے بارے میں بتائیں</p>
+                    <img class="voice-wave" src="wave.png" alt="Waveform representing a spoken introduction">
                     <p>Describe your services and experience in Urdu or English.</p>
                 </section>
 
                 <!-- Include card  -->
-                <section class="note">
+                <section class="helpful-note">
                     <h3>What to include</h3>
                     <ol>
                         <li>The services you provide</li>
@@ -155,19 +155,19 @@
         <!-- Bottom cards  -->
 
 
-        <section class="section">
-            <p class="label">A CLEAR WORKER PROFILE</p>
+        <section class="content-section">
+            <p class="small-heading">A CLEAR WORKER PROFILE</p>
             <h2>Information that helps households decide</h2>
-            <div class="three">
-                <article class="card">
+            <div class="three-column-layout">
+                <article class="content-card">
                     <h3>Relevant skills</h3>
                     <p>Explain the repairs and installations you can handle.</p>
                 </article>
-                <article class="card">
+                <article class="content-card">
                     <h3>Practical experience</h3>
                     <p>Describe your experience with the work you offer.</p>
                 </article>
-                <article class="card">
+                <article class="content-card">
                     <h3>Clear service area</h3>
                     <p>List the neighbourhoods you can reach for a job.</p>
                 </article>
@@ -177,23 +177,23 @@
 
         <!-- Guidance Cards  -->
 
-        <section class="section">
-            <p class="label">PROFILE GUIDANCE</p>
+        <section class="content-section">
+            <p class="small-heading">PROFILE GUIDANCE</p>
             <h2>Before completing your details</h2>
-            <div class="two">
-                <article class="card">
+            <div class="two-column-layout">
+                <article class="content-card">
                     <h3>What should I write about my work?</h3>
                     <p>Include your trade, the jobs you handle and how long you have worked in the field.</p>
                 </article>
-                <article class="card">
+                <article class="content-card">
                     <h3>Which contact number should I use?</h3>
                     <p>Use a number where customers can reach you about work.</p>
                 </article>
-                <article class="card">
+                <article class="content-card">
                     <h3>Which languages should I list?</h3>
                     <p>Include the languages you can comfortably use when discussing a job.</p>
                 </article>
-                <article class="card">
+                <article class="content-card">
                     <h3>Does a profile confirm identity?</h3>
                     <p>No. A listed profile and an identity check are separate things.</p>
                 </article>
@@ -204,7 +204,7 @@
     <!-- Footer  -->
 
 
-    <footer class="footer">
+    <footer class="site-footer">
         <div>
             <strong>WASEELA</strong>
             <p>Professional profiles for skilled workers.</p>
